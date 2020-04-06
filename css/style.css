@@ -1,0 +1,196 @@
+body{
+	font-family: Arial, sans-serif;
+	margin:0;
+}
+
+img{
+	max-width:600px;
+	margin: 0 auto;
+	display: block;
+}
+
+h2{
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+div{
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+	color:#0073e6;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+section{
+	padding-bottom: 100px;
+	width:800px;
+	margin: 0 auto;
+}
+
+section > p{
+	width:600px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+span{
+	margin-top: 10px;
+	display:block;
+	text-align: right;
+}
+
+
+a.image_link{
+	font-size: 10pt;
+}
+
+ul li{
+	list-style-type: none;
+	padding-right: 50px;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+
+
+header{
+	padding-top: 40px;
+	text-align: center;
+	background-image: url("../img/steam-header.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	color:white;
+}
+
+header > p{
+	font-size: 10pt;
+	padding-bottom: 10px;
+}
+
+
+footer{
+	text-align: center;
+	margin-bottom: 50px;
+	color:grey;
+	font-size: 10pt;
+	padding-bottom: 10px;
+}
+
+
+p{
+	line-height: 1.5;
+}
+
+strong{
+	font-weight: 900;
+	color: #e67300;
+}
+
+
+main{
+	margin-bottom: 100px;
+}
+
+.chart{
+	width: 600px;
+}
+
+
+.article_container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 100px;
+}
+
+.img_cont{
+	display: grid;
+	grid-template-columns: 300px 300px;
+	width: 600px;
+	padding: 0;
+}
+
+.img_cont img{
+	width:300px;
+}
+
+.img_cont span{
+	width: 300px;
+}
+
+.img_cont div{
+	padding: 0;
+}
+
+.center_img{
+	grid-column: 1/-1;
+}
+
+
+.link{
+	width:300px;
+}
+
+.sect{
+	width:600px;
+	margin-bottom: 150px;
+}
+
+
+svg.marks{
+	max-width:800px;
+	margin:0 auto;
+	height: 100%;
+}
+
+.vega-bind-name{
+	display: inline;
+}
+
+.emp{
+	font-weight: 900;
+}
+
+.reference{
+	font-size: 10pt;
+	margin-bottom: 0;
+	margin-top: 10px;
+	font-weight: 900;
+}
+
+.ref{
+	display: block;
+}
+
+.ref > li{
+	line-height: 1.5;
+	font-style: italic;
+	font-size: 10pt;
+}
+
+.insight > li{
+	margin-bottom: 50px;
+}
+
+.insight > li > p{
+	margin-bottom: 0;
+}
