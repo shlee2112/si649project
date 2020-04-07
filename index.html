@@ -4,6 +4,9 @@
 	<title>SI 649 | Lab 2 Group 2</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="img/steam.jpg" type="image/jpg" sizes="16x16">
+	<script src="https://cdn.jsdelivr.net/npm/vega@5.9.1"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.4.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.2.2"></script>
 
 </head>
 <body>
@@ -42,6 +45,7 @@
 			<div class="sect">
 				<h1>Our Design</h1>
 				<h2 id="sketch1">High Level</h2>
+				<div id="vis1"></div>
 				<img src="img/mockup.jpg">
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
 				</p>	
@@ -53,5 +57,11 @@
 	<footer>
 		<p>SI 649 Group Project | Lab 2 Group 2</p>
 	</footer>
+
+	<script type="text/javascript">
+		let c = "js/chart.json";
+			vegaEmbed('#vis1', c, {"renderer": "svg"}).then(function(result) {
+			}).catch(console.error);
+	</script>
 </body>
 </html>
