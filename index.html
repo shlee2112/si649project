@@ -4,9 +4,6 @@
 	<title>SI 649 | Lab 2 Group 2</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="img/steam.jpg" type="image/jpg" sizes="16x16">
-	<script src="https://cdn.jsdelivr.net/npm/vega@5.9.1"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.4.0"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.2.2"></script>
 
 </head>
 <body>
@@ -22,7 +19,7 @@
 		<section class="container">
 			<div class="sect">
 				<h1>Communication Goals</h1>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+				<p>Using Steam and gaming data, we analyzed how video game sales evolve over time by year of release. Also, we looked at how it is different by publishers and genres.
 				</p>
 			</div>
 			<div class="sect">
@@ -33,22 +30,71 @@
 			<div class="sect">
 				<h1>Our Data</h1>
 				<img src="img/steam.jpg">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+				<h3>Steam Store Games</h3>
+				<p>Dowloaded from Kaggle, <a href="https://www.kaggle.com/nikdavis/steam-store-games#steam.csv">the Steam Store Games</a> dataset contains information about various aspects of 27,000 games on the Steam store from June 1997 to April 2019. There are a total of 18 features, including price, ratings, genre, time played, number of positive/negative reviews.
+				</p>
+
+				<h3>Global Video Game Sales in Volume (1983-2017)</h3>
+				<p>Downloaded from data.world, <a href="https://data.world/julienf/video-games-global-sales-in-volume-1983-2017">this dataset</a> contains information about total sales in North America, Europe, Japan, as well as total global sale by each game from 1983 to 2017. It also includes features like platforms, release years, genres and publishers.
 				</p>
 			</div>
-			<div class="sect">
+			<div class="sect sketches">
 				<h1>Sketches / Experiements</h1>
+				<img src="img/sketch1.png">
+				<img src="img/sketch2.png">
+				<img src="img/sketch3.png">
+				<img src="img/sketch4.jpg">
 				<img src="img/mockup.jpg">
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
 				</p>
 			</div>
 			<div class="sect">
 				<h1>Our Design</h1>
-				<h2 id="sketch1">High Level</h2>
-				<div id="vis1"></div>
+				<!-- <h2 id="sketch1">High Level</h2> -->
+				<div class='tableauPlaceholder' id='viz1586632999948' style='position: relative'>
+					<noscript>
+						<a href='#'>
+							<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final_dashboard_15866329098990&#47;SalesbyGenreandPlatformOverTime&#47;1_rss.png' style='border: none' />
+						</a>
+					</noscript>
+					<object class='tableauViz'  style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+						<param name='embed_code_version' value='3' /> 
+						<param name='site_root' value='' />
+						<param name='name' value='final_dashboard_15866329098990&#47;SalesbyGenreandPlatformOverTime' />
+						<param name='tabs' value='no' />
+						<param name='toolbar' value='yes' />
+						<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final_dashboard_15866329098990&#47;SalesbyGenreandPlatformOverTime&#47;1.png' /> 
+						<param name='animate_transition' value='yes' />
+						<param name='display_static_image' value='yes' />
+						<param name='display_spinner' value='yes' />
+						<param name='display_overlay' value='yes' />
+						<param name='display_count' value='yes' />
+						<param name='filter' value='publish=yes' />
+					</object>
+				</div>                
+				<script type='text/javascript'>                    
+					var divElement = document.getElementById('viz1586632999948');                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+					if ( divElement.offsetWidth > 800 ) { 
+						vizElement.style.width='100%';
+						vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+					} 
+
+					// else if ( divElement.offsetWidth > 500 ) { 
+					// 	vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+					// } 
+
+					else { 
+						vizElement.style.width='800px';
+						vizElement.style.height='600px';
+					}                     
+
+					var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+				</script>
 				<!-- <img src="img/mockup.jpg"> -->
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-				</p>	
+				</p>
+
 			</div>
 						
 		</section>
@@ -58,10 +104,5 @@
 		<p>SI 649 Group Project | Lab 2 Group 2</p>
 	</footer>
 
-	<script type="text/javascript">
-		let c = "js/chart.json";
-			vegaEmbed('#vis1', c, {"renderer": "svg"}).then(function(result) {
-			}).catch(console.error);
-	</script>
 </body>
 </html>

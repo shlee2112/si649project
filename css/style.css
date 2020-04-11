@@ -7,6 +7,11 @@ img{
 	max-width:600px;
 	margin: 0 auto;
 	display: block;
+	margin-bottom: 30px;
+}
+
+.sketches > img{
+	width: 500px
 }
 
 h2{
@@ -94,6 +99,7 @@ footer{
 
 p{
 	line-height: 1.5;
+	padding-bottom: 20px;
 }
 
 strong{
@@ -151,10 +157,15 @@ main{
 }
 
 .sect{
-	width:600px;
+	width: 600px;
 	margin-bottom: 150px;
 }
 
+
+.tableauPlaceholder{
+	width:800px;
+	margin-left: -100px;
+}
 
 svg.marks{
 	max-width:800px;
